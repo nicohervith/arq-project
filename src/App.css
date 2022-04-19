@@ -1,0 +1,500 @@
+*{
+  
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+:root{
+  --red-color:rgb(177, 7, 7);
+}
+
+.navbar-style{
+  position:fixed;
+  background: #d8d8d8;
+  
+  width:100%;
+  z-index:999
+  
+}
+
+.me-auto{
+  margin:auto;
+  text-align: center;
+
+
+}
+.nav-selection{
+  text-decoration: none;
+}
+
+
+
+/**** Carousel ***/
+
+.carousel{
+
+  position: relative;
+  width: 100%;
+}
+
+.d-block{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+
+}
+
+
+/****** Home ********/
+
+#main-section{
+  background-image: url(./Assets/Images/WhiteBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.text-container__h4{
+  color:  var(--red-color);
+}
+
+h1{
+  margin-top: 10px;
+  text-align: center;
+  font-size:40px;
+  margin:auto;
+  color:rgb(0, 0, 0)
+}
+
+p{
+  text-align: center;
+  font-size: 20px;
+  width: 70%;
+  margin:auto;
+  color:rgb(80, 80, 80)
+}
+
+
+ .contenedor{
+        margin:auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+         justify-content: center;
+
+    }
+
+.card-container{
+  padding:1.5rem;
+  
+}
+
+    .contenedor figure{
+       position:relative;
+        height: 350px;
+        cursor: pointer;
+        width: 420px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+
+    .contenedor figure img{
+      object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        
+
+    }
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+       text-align: center;
+    }
+
+    
+    .contenedor figure:hover > .capa h3{
+        margin-top: 135px;
+        margin-bottom: 15px;
+        opacity:1
+    }
+
+    .capa h3{
+        font-size: 40px;
+        text-shadow: 7px 5px 5px rgba(0,0,0,0.50);
+        opacity: 1;
+ 
+    }
+
+
+    .contenedor figure:hover > img{
+        transform: scale(1.3);
+    }
+    .contenedor figure .capa h3{
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        transition: all 400ms ease-out;
+        margin-top:155px;
+    }
+
+    .text-container{
+      display: flex;
+      flex-wrap:wrap ;
+      justify-content: center;
+
+    }
+    .text-container-style{
+      display: flex;
+      flex-direction: row;
+      width: auto;
+
+    }
+
+
+    .text-container h4{
+      font-size: 23px;
+      text-align: center;
+      
+    }
+
+    .text-container p{
+      font-size: 15px;
+    }
+
+
+.container-end h2{
+  color: var(--red-color);
+  text-align: center;
+
+}
+
+    .container-style{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin:auto;
+      width: 1200px;
+      padding:10px;
+      margin-top: 50px;
+    }
+
+    .container-style h5{
+      font-size: 25px;
+      text-align: center;
+      color:rgb(165, 165, 165);
+    }
+
+    .container-style p{
+      font-size: 15px;
+      width: auto;
+      margin:5px;
+      color:rgb(255, 255, 255);
+      
+    }
+    
+#overlay{
+  background-image: url(./Assets/Images/casaSteelBackground.jpg);
+  background-color: rgb(24, 24, 24);
+  background-blend-mode: soft-light;
+  opacity:1;
+  background-position: center;
+  background-size:cover;
+
+}
+
+/*******  About Us *******/
+
+#about-us-page{
+  background-image: url(./Assets/Images/WhiteBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.second-container h2{
+  color:var(--red-color);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.second-container p{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container-equipo-oficinas{
+  display: grid;
+  grid-template-columns: 320px 320px;
+  grid-gap:10px;
+  grid-auto-rows: 150px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  
+}
+
+.img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img:first-child{
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+
+
+  @media only screen and ( max-width:768px){
+
+    .contenedor figure{
+      width: auto;
+
+    }
+
+    .text-container{
+      display: inline-block;
+      width: auto;
+    }
+
+    .text-card{
+      padding:20px
+    }
+      
+    .capa h3{
+      font-size:30px;
+      align-items: center;
+    }
+
+    .text-container-style{
+      display: flex;
+      flex-direction: column;
+    }
+ 
+    .container-style{
+      display: flex;
+      flex-direction: column;
+      margin:10px ;
+      padding:40px;
+      width:auto;
+    }
+
+    .container-form-presupuesto{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin:auto;
+        max-width: 200px;
+
+    }
+
+     .container-form-contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin:auto;
+        max-width: 300px;
+
+    }
+
+    .container-equipo-oficinas{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 300px;
+      object-fit: cover;
+      margin:auto;
+
+    }
+    .img{
+      height: 200px;
+    }
+
+
+  }
+
+  /******** Home button *****/
+
+  .nav-selection-button{
+    text-decoration: none;
+  }
+
+  .button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     width: 100%;
+     
+  }
+
+  .home-button{
+    background-color: var(--red-color);
+    border:none;
+    color:#fff;
+    font-size:25px;
+    width: 100%;
+    height: 100px;
+    
+  }
+  
+  .home-button:hover{
+    background-color: rgb(100, 12, 12) ;
+    transition: all 0.5s ease;
+  }
+
+    /********** Footer *********/
+
+
+.main-footer {
+  margin:auto;
+  color: #fff;
+  background-color: #4b4b4b;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.col-sm{
+   color: #fff;
+}
+
+.selection-footer{
+  text-decoration: none;
+  color:#fff;
+}
+
+.selection-footer:hover{
+  color:rgb(145, 145, 145);
+}
+
+.working-img{
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  margin-top: 100px;
+}
+
+
+/***** Presupuesto  *******/
+
+#presupuesto{
+  background-image: url(./Assets/Images/WhiteBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1{
+  color:rgb(131, 131, 131);
+}
+
+.container-form-presupuesto{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50%;
+  color:rgb(150, 150, 150);
+  margin:auto;
+  align-items: center;
+   border:none;
+  
+}
+
+.input-presupuesto{
+
+  margin:15px;
+   border: solid 2px rgb(150, 150, 150);
+   height: 50px;
+   padding:10px;
+    
+}
+
+h5{
+  text-align: center;
+  margin:auto;
+  font-size: 20px;
+}
+.container-selectores{
+  display: grid;
+  width: 40%;
+  margin:auto;
+}
+
+.textarea-presupuesto{
+  width: 300px;
+  height: 200px;
+  resize: none;
+  margin:auto;
+}
+
+.form-radio{
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.input-radio{
+  
+  align-items: center;
+}
+
+.opciones-input{
+  margin:10px;
+  align-items: center;
+}
+
+.send-button{
+  width: 180px;
+  height: 50px;
+  color:#fff;
+  background-color: var(--red-color);
+  padding:5px;
+  margin:auto;
+  font-size: 25px;
+}
+
+.send-button:hover{
+    background-color: rgb(100, 12, 12) ;
+    transition: all 0.5s ease;
+}
+
+/*****  CONTACT PAGE ******/
+
+.container-form-contact{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50%;
+  grid-row-gap: 25px;
+  margin:auto;
+  align-items: center;
+}
+
+.input-contact{
+   border: solid 2px rgb(150, 150, 150);
+   height: 50px;
+   padding:15px
+}
+
+
+.textarea-contact{
+  resize: none;
+  border: solid 2px rgb(150, 150, 150);
+  padding:15px;
+
+}
+
+.title{
+  color:  var(--red-color);
+}
+
+#contacto{
+  background-image: url(./Assets/Images/WhiteBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
