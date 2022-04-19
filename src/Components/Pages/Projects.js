@@ -4,7 +4,7 @@ import { Card,Button } from 'react-bootstrap';
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <br />
       <br />
       <br />

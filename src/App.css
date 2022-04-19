@@ -533,3 +533,11 @@ h5{
   margin:auto;
 }
 
+#projects{
+  background-image: url(./Assets/Images/WhiteBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
