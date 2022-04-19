@@ -33,7 +33,7 @@ const Aboutus = () => {
         <br />
         <br />
 
-        <div class="container-equipo-oficinas">
+        <div className="project-container">
           
             <img className="img" src={arqoffice1} alt="" />
             <img className="img" src={arqoffice2} alt="" />
